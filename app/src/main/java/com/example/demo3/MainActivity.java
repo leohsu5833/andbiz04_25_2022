@@ -91,4 +91,10 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(se.getMessage());
         }
     }
+
+    public void doWeb(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.yahoo.com"));
+        startActivity(intent);
+    }
 }
